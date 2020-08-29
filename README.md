@@ -9,8 +9,6 @@ Have you seen these amazing 3D hover effect on Apple TV? Now you can easily make
 2. Add `hover3D.js` to your page;
 3. Create a new `Hover3D()` instance and set it up.
 
-**When you did it you can get something like this:**
-
 ![SparklinerJS](/sparkliner.png)
 
 🔥[Live demo](https://volorf.github.io/SparklinerJS/)
