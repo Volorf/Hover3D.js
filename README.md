@@ -9,7 +9,7 @@ Have you seen these amazing 3D hover effect on Apple TV? Now you can easily make
 2. Add `hover3D.js` to your page;
 3. Create a new `Hover3D()` instance and set it up.
 
-🔥[Live demo](https://volorf.github.io/hover3D/)
+🔥 [Live demo](https://volorf.github.io/hover3D/)
 
 ## How to add hover3D.js to my page
 Put a hover3D.js link in the `<head>` section. 
@@ -26,7 +26,7 @@ Add a script with settings above the closing `</body>` tag.
 ```
 
 ## How to create 3D hover effect
-Easy and quick. I'm not kidding.
+Easy and quick. A single line of code. I'm not kidding.
 ```javascript
 // Create a HoverEffect object and pass an id/className
 // of HTML element(s) you want to create the effect to.
