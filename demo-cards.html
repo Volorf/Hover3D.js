@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <style>
+            body {
+                padding: 0px;
+                margin: 0px;
+                background-color: #F0F0F0;
+                display: flex;
+                width: 100vw;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+            }
+            .card {
+                width: 300px;
+                height: 400px;
+                background-color: #D8D8D8;
+                box-shadow: 0px 96px 96px rgba(0,0,0,0.1);
+                transform-style: preserve-3d;
+                background-image: url("image.png");
+                background-size: cover;
+                cursor: pointer;
+            }
+        </style>
+    <script src="hover3D.js"></script>
+    </head>
+    <body>
+        <div class="card">
+        </div>
+    <script>
+        let myHover3D = new Hover3D(".card");
+    </script>
+    </body>
+</html>

@@ -3,10 +3,11 @@ class Hover3D
     constructor(id)
     {
         this.id = id;
-        this.xOffset = 3;
-        this.yOffset = 3;
+        this.xOffset = 10;
+        this.yOffset = 10;
         this.attack = 0.1;
         this.release = 0.5;
+        this.perspective = 500;
         this.create();
     }
 
@@ -15,7 +16,7 @@ class Hover3D
         document.querySelectorAll(this.id).forEach(element => 
         {
             const rectTransform = element.getBoundingClientRect();
-
+            const perspective = "perspective(" + this.perspective + "px) ";
             element.style.setProperty("transform-style", "preserve-3d");
             
             element.addEventListener("mouseenter", e =>
@@ -32,13 +33,13 @@ class Hover3D
                 let propXRot = "rotateX(" + yRot + "deg) ";
                 let propYRot = "rotateY(" + xRot + "deg)";
 
-                element.style.setProperty("transform", "perspective(500px) " + propXRot + propYRot);
+                element.style.setProperty("transform", perspective + propXRot + propYRot);
             })
 
             element.addEventListener("mouseleave", e => 
             {
                 element.style.setProperty("transition", "transform " + this.release + "s");
-                element.style.setProperty("transform", "perspective(500px) rotateX(0deg) rotateY(0deg)");
+                element.style.setProperty("transform", perspective + "rotateX(0deg) rotateY(0deg)");
             })
         })
     }
