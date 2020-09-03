@@ -22,9 +22,7 @@ Put a hover3D.js link in the `<head>` section.
 ## How to create 3D hover effect
 It's just a single line of code!
 ```html
-<!-- Add a script with settings above the closing `</body>` tag. -->
-<!-- // Create a HoverEffect object and pass an id/className
-// of HTML element(s) you want to create the effect to. -->
+<!-- Create a HoverEffect object and pass an id/className of HTML element(s) you want to create the effect to -->
 <script>
     let myHover3D = new Hover3D(".card"); // Yep! That's it.
 </script>
