@@ -5,7 +5,7 @@ Have you seen these amazing 3D hover effect on Apple TV? Have you known that you
 ![Apple TV 3D Hover Effect](/hover3D.gif)
 
 ## Three simple steps
-1. [Downoload it](https://raw.githubusercontent.com/Volorf/SparklinerJS/master/sparkliner.js);
+1. [Downoload it](https://raw.githubusercontent.com/Volorf/Hover3D.js/master/hover3D.js);
 2. Add `hover3D.js` to your page;
 3. Create a new `Hover3D()` instance.
 
