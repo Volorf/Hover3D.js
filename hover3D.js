@@ -15,7 +15,6 @@ class Hover3D
     {
         document.querySelectorAll(this.id).forEach(element => 
         {
-            const rectTransform = element.getBoundingClientRect();
             const perspective = "perspective(" + this.perspective + "px) ";
             element.style.setProperty("transform-style", "preserve-3d");
             
@@ -26,6 +25,7 @@ class Hover3D
 
             element.addEventListener("mousemove", e => 
             {
+                const rectTransform = element.getBoundingClientRect();
                 let dy = e.clientY - rectTransform.top;
                 let dx = e.clientX - rectTransform.left;
                 let xRot = this.map(dx, 0, rectTransform.width, -this.xOffset, this.xOffset);
